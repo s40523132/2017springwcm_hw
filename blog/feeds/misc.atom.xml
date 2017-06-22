@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>WCM7的作業網誌</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2017-04-26T12:00:00+08:00</updated><entry><title>2017-04-26 期中心得</title><link href="./2017-04-26-qi-zhong-xin-de.html" rel="alternate"></link><published>2017-04-26T12:00:00+08:00</published><updated>2017-04-26T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-04-26:./2017-04-26-qi-zhong-xin-de.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;1.這次老師也教了很多新的東西,雖然有很多我還是不懂,但是我&lt;/p&gt;
+&lt;p&gt;也盡力了,像是virtualbox的安裝.ubuntu的安裝加上裡面也要設定&lt;/p&gt;
+&lt;p&gt;網路和一些小地方.&lt;/p&gt;
+&lt;p&gt;2.上次老師教的如何在虛擬主機開啟伺服器,這個我就沒做成功,&lt;/p&gt;
+&lt;p&gt;開一個伺服器原來是那麼難的一件事情,雖然我很想學但是再&lt;/p&gt;
+&lt;p&gt;短時間內學會可能有些困難.&lt;/p&gt;
+&lt;p&gt;3.從一開始上課到現在目前教過的程式加上一些實用的技能,真的&lt;/p&gt;
+&lt;p&gt;很謝謝老師那麼用心的教導,雖然不是全部都有學起來,但我相信以&lt;/p&gt;
+&lt;p&gt;後一定會應用上的.&lt;/p&gt;</summary><category term="fossil"></category></entry><entry><title>2017-04-25 製作網路線心得</title><link href="./2017-04-25-zhi-zuo-wang-lu-xian-xin-de.html" rel="alternate"></link><published>2017-04-25T12:00:00+08:00</published><updated>2017-04-25T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-04-25:./2017-04-25-zhi-zuo-wang-lu-xian-xin-de.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;須先準備1條568B線.壓線鉗.接頭&lt;/p&gt;
+&lt;p&gt;先用壓線鉗把外套拆掉.再把裡面4對線分別分開
+把8條線按照(白橘.橘.白綠.藍.白藍.綠.白棕.棕)
+用整齊再對齊.套入接頭用力壓到底
+再用壓線鉗壓緊.大功告成&lt;/p&gt;
+&lt;p&gt;這是第一次自己拆線再組起來 作起來超麻煩的 
+而且做出來還不一定就成功 還有可能失敗
+失敗就又要再來過 原來做網路線是很麻煩的事情 &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/rkQt3nG"&gt;&lt;img src="http://i.imgur.com/rkQt3nG.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="fossil"></category></entry><entry><title>2017-04-24-2 IP指令</title><link href="./2017-04-24-2-ipzhi-ling.html" rel="alternate"></link><published>2017-04-24T12:00:00+08:00</published><updated>2017-04-24T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-04-24:./2017-04-24-2-ipzhi-ling.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;1.查自己的IP:ipconfing /all&lt;/p&gt;
+&lt;p&gt;2.ping 自己 IP                            &lt;/p&gt;
+&lt;p&gt;3.ping Gateway IP                         &lt;/p&gt;
+&lt;p&gt;4.ping 外部 Gateway                       &lt;/p&gt;
+&lt;p&gt;5.ping 外部 Ip                            &lt;/p&gt;
+&lt;p&gt;6.tracert 區域網路主要網站               &lt;/p&gt;
+&lt;p&gt;7.tracert 廣域網路主要&lt;/p&gt;
+&lt;p&gt;8.ls -l 長型列印 long list&lt;/p&gt;
+&lt;p&gt;9.clear (cls)&lt;/p&gt;</summary><category term="fossil"></category></entry><entry><title>2017-04-24-3 fossil指令</title><link href="./2017-04-24-3-fossilzhi-ling.html" rel="alternate"></link><published>2017-04-24T12:00:00+08:00</published><updated>2017-04-24T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-04-24:./2017-04-24-3-fossilzhi-ling.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;1.fossil clone uri fossil_file      載 uri fossil_file下來&lt;/p&gt;
+&lt;p&gt;2.fossil open                           開啟fossil&lt;/p&gt;
+&lt;p&gt;3.fossil add                             更新fossil&lt;/p&gt;
+&lt;p&gt;4.fossil commint -m                附加訊息&lt;/p&gt;
+&lt;p&gt;5.fossil remote-url off             遙控 url 關閉&lt;/p&gt;
+&lt;p&gt;6.fossil push                           回推&lt;/p&gt;
+&lt;p&gt;7.fossil sql -R vcp.fossil  查資料
+  select login,pw,cap from user;  選擇要的資料&lt;/p&gt;</summary><category term="fossil"></category></entry><entry><title>2017-04-24-4 nginx安裝</title><link href="./2017-04-24-4-nginxan-zhuang.html" rel="alternate"></link><published>2017-04-24T12:00:00+08:00</published><updated>2017-04-24T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-04-24:./2017-04-24-4-nginxan-zhuang.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;1.sudo apt update                                 下載安裝更新&lt;/p&gt;
+&lt;p&gt;2.sudo rm /var/lib/dpkg/lock                 刪除lock&lt;/p&gt;
+&lt;p&gt;3.sudo apt install nginx                         安裝nginx&lt;/p&gt;
+&lt;p&gt;4.ifconfig                                             查ip&lt;/p&gt;
+&lt;p&gt;5.cd /var/www/html                             指定到/var/www/html&lt;/p&gt;
+&lt;p&gt;6.ls -l                                                   列出目前資料夾&lt;/p&gt;
+&lt;p&gt;7.sudo vi index.nginx-debian.html         進入index.nginx-debian.html編輯&lt;/p&gt;
+&lt;p&gt;8.clear                                                 清除所有指令&lt;/p&gt;
+&lt;p&gt;9.history                                               列出所有指令&lt;/p&gt;</summary><category term="fossil"></category></entry><entry><title>2017-04-24 上課筆記</title><link href="./2017-04-24-shang-ke-bi-ji.html" rel="alternate"></link><published>2017-04-24T12:00:00+08:00</published><updated>2017-04-24T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-04-24:./2017-04-24-shang-ke-bi-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;即便我不知道完整答案我也會舉例   設計是一種表達  表達意義在"設"上&lt;/p&gt;
+&lt;p&gt;1.口語表達 2.文字表達 3.2D圖像表達 4.3D圖像表達 5.量化.定性方法 6.實際操作&lt;/p&gt;
+&lt;p&gt;精巧配置東西 用固體.液體.軟體&lt;/p&gt;
+&lt;p&gt;機:很多元件批湊合成可運作&lt;/p&gt;
+&lt;p&gt;械:控制在一個範圍 器物有特定功能&lt;/p&gt;
+&lt;p&gt;設:表達出來給別人做&lt;/p&gt;
+&lt;p&gt;計:經過很多思考討論考量&lt;/p&gt;
+&lt;p&gt;熱泵(HEAT PUMP):可將能量由低溫處（低溫熱庫）傳送到高溫處（高溫熱庫）&lt;/p&gt;
+&lt;p&gt;在各種元件間最佳化&lt;/p&gt;
+&lt;p&gt;我們要利用 虛實整合設計工程師  虛:數位化 實:實作   網際內容管理在"虛"裡做"實"的內容&lt;/p&gt;
+&lt;p&gt;10/100 Mbps&lt;/p&gt;
+&lt;p&gt;1byte= 8bits&lt;/p&gt;
+&lt;p&gt;DNS:網域名稱系統(Domain Name System)&lt;/p&gt;</summary><category term="fossil"></category></entry><entry><title>2017-04-23 如何開啟USB裡的cmsimfly</title><link href="./2017-04-23-ru-he-kai-qi-usbli-de-cmsimfly.html" rel="alternate"></link><published>2017-04-23T12:00:00+08:00</published><updated>2017-04-23T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-04-23:./2017-04-23-ru-he-kai-qi-usbli-de-cmsimfly.html</id><summary type="html">&lt;p&gt;開啟USB裡的cmsimfly&lt;/p&gt;
+
+
+&lt;p&gt;利用指令在近端開啟cmsimfly:&lt;/p&gt;
+&lt;p&gt;1.cd tmp 2.cd cmsimfly 3.python wsgi.py&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/214641507" width="640" height="359" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/214641507"&gt;2017-04-25_17-33-29&lt;/a&gt; from &lt;a href="https://vimeo.com/user58668068"&gt;陳崴&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="fossil"></category></entry></feed>

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>WCM7的作業網誌</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2017-06-25T12:00:00+08:00</updated><entry><title>2017-06-25 IPV4跳IPV6</title><link href="./2017-06-25-ipv4tiao-ipv6.html" rel="alternate"></link><published>2017-06-25T12:00:00+08:00</published><updated>2017-06-25T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-06-25:./2017-06-25-ipv4tiao-ipv6.html</id><summary type="html">&lt;p&gt;啟動Xming sever  打開putty&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>WCM7的作業網誌</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2017-06-26T12:00:00+08:00</updated><entry><title>2017-06-26 安裝Ubuntu16.04</title><link href="./2017-06-26-an-zhuang-ubuntu1604.html" rel="alternate"></link><published>2017-06-26T12:00:00+08:00</published><updated>2017-06-26T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-06-26:./2017-06-26-an-zhuang-ubuntu1604.html</id><summary type="html">&lt;p&gt;安裝Unbutu的前置作業&lt;/p&gt;
+
+
+&lt;p&gt;這學期我們學了另一種作業系統Unbutu16.04&lt;/p&gt;
+&lt;p&gt;先準備2台舊電腦把還原卡拔除.拔起電池3秒再裝回.把硬碟裝一起.把2個4G的RAM合併成8G的RAM.開機測試B一聲OK B好幾聲不OK&lt;/p&gt;
+&lt;p&gt;之後在BIOS模式下設定開機順序由光碟先 安裝完後設定:&lt;/p&gt;
+&lt;p&gt;1.開機順序由硬碟優先&lt;/p&gt;
+&lt;p&gt;2.側蓋打開能繼續操作&lt;/p&gt;
+&lt;p&gt;3.斷電.恢復電時自動開機&lt;/p&gt;
+&lt;p&gt;之後就等安裝完成&lt;/p&gt;
+&lt;p&gt;sudo apt-get install ubuntu-desktop  安裝介面&lt;/p&gt;</summary><category term="fossil"></category></entry><entry><title>2017-06-25 IPV4跳IPV6</title><link href="./2017-06-25-ipv4tiao-ipv6.html" rel="alternate"></link><published>2017-06-25T12:00:00+08:00</published><updated>2017-06-25T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-06-25:./2017-06-25-ipv4tiao-ipv6.html</id><summary type="html">&lt;p&gt;啟動Xming sever  打開putty&lt;/p&gt;
 &lt;p&gt;設定Host Name:wcmg7.kmol.info&lt;/p&gt;
 &lt;p&gt;proxy設定:1.點選HTTP 2.proxy hostname:proxy.kmol.info(Port:3128)&lt;/p&gt;
 

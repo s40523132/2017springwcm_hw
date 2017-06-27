@@ -326,11 +326,12 @@ WCM7的作業網誌            </a>
 <p>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt   建立local.key和local.crt</p>
 <p>/etc/stunnel/stunnel.conf設定支援IPV6</p>
 <p>[https]
-accept = :::443
-cert = /etc/stunnel/localhost.crt
-key = /etc/stunnel/localhost.key
-exec = /usr/bin/fossil
-execargs = /usr/bin/fossil http /home/user/repository/mde2a1.fossil --https --nojail</p>
+accept = :::443</p>
+<p>cert = /etc/stunnel/localhost.crt</p>
+<p>key = /etc/stunnel/localhost.key</p>
+<p>exec = /usr/bin/fossil</p>
+<p>execargs = /usr/bin/fossil http /home/user/
+repository/mde2a1.fossil --https --nojail</p>
 <p>--nojail 目的在 drop the root privilege but do not enter the chroot jail</p>
 <p>重新啟動 stunnel4 則使用 /etc/init.d/stunnel4 restart</p>
 <p>設定完成後, 重新開機即可以 https://yourip 連結至自己組別的主機</p>

@@ -13,11 +13,12 @@
 &lt;p&gt;sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt   建立local.key和local.crt&lt;/p&gt;
 &lt;p&gt;/etc/stunnel/stunnel.conf設定支援IPV6&lt;/p&gt;
 &lt;p&gt;[https]
-accept = :::443
-cert = /etc/stunnel/localhost.crt
-key = /etc/stunnel/localhost.key
-exec = /usr/bin/fossil
-execargs = /usr/bin/fossil http /home/user/repository/mde2a1.fossil --https --nojail&lt;/p&gt;
+accept = :::443&lt;/p&gt;
+&lt;p&gt;cert = /etc/stunnel/localhost.crt&lt;/p&gt;
+&lt;p&gt;key = /etc/stunnel/localhost.key&lt;/p&gt;
+&lt;p&gt;exec = /usr/bin/fossil&lt;/p&gt;
+&lt;p&gt;execargs = /usr/bin/fossil http /home/user/
+repository/mde2a1.fossil --https --nojail&lt;/p&gt;
 &lt;p&gt;--nojail 目的在 drop the root privilege but do not enter the chroot jail&lt;/p&gt;
 &lt;p&gt;重新啟動 stunnel4 則使用 /etc/init.d/stunnel4 restart&lt;/p&gt;
 &lt;p&gt;設定完成後, 重新開機即可以 https://yourip 連結至自己組別的主機&lt;/p&gt;

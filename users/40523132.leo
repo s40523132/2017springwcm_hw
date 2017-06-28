@@ -71,6 +71,7 @@
 <v t="leo.20170625195543.1"><vh>@edit 20170625.md</vh></v>
 <v t="leo.20170626203912.1"><vh>@edit 20170626.md</vh></v>
 <v t="leo.20170627202601.1"><vh>@edit 20170627.md</vh></v>
+<v t="leo.20170628213017.1"><vh>@edit 20170628.md</vh></v>
 </v>
 </v>
 <v t="leo.20161113205737.1"><vh>@button https server</vh></v>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>WCM7的作業網誌</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2017-06-27T12:00:00+08:00</updated><entry><title>2017-06-27 Ubuntu中啟動stunnel和fossil</title><link href="./2017-06-27-ubuntuzhong-qi-dong-stunnelhe-fossil.html" rel="alternate"></link><published>2017-06-27T12:00:00+08:00</published><updated>2017-06-27T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-06-27:./2017-06-27-ubuntuzhong-qi-dong-stunnelhe-fossil.html</id><summary type="html">&lt;p&gt;stunnel和fossil的安裝&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>WCM7的作業網誌</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2017-06-28T12:00:00+08:00</updated><entry><title>2017-06-28 本學期所學</title><link href="./2017-06-28-ben-xue-qi-suo-xue.html" rel="alternate"></link><published>2017-06-28T12:00:00+08:00</published><updated>2017-06-28T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-06-28:./2017-06-28-ben-xue-qi-suo-xue.html</id><summary type="html">&lt;p&gt;CMSimfly.stunnel.fossil.nginx&lt;/p&gt;
+
+
+&lt;p&gt;CMSimfly:用來學習如何管理.操作.設計.開發&lt;/p&gt;
+&lt;p&gt;stunnel:將Client端的網路資料採用SSL(Secure Sockets Layer)加密後，安全的傳輸到指定的Server端再進行解密還原&lt;/p&gt;
+&lt;p&gt;fossil:是在軟體開發中使用的wiki軟體伺服器&lt;/p&gt;
+&lt;p&gt;nginx:可從http轉到https&lt;/p&gt;</summary><category term="fossil"></category></entry><entry><title>2017-06-27 Ubuntu中啟動stunnel和fossil</title><link href="./2017-06-27-ubuntuzhong-qi-dong-stunnelhe-fossil.html" rel="alternate"></link><published>2017-06-27T12:00:00+08:00</published><updated>2017-06-27T12:00:00+08:00</updated><author><name>40523132</name></author><id>tag:,2017-06-27:./2017-06-27-ubuntuzhong-qi-dong-stunnelhe-fossil.html</id><summary type="html">&lt;p&gt;stunnel和fossil的安裝&lt;/p&gt;
 
 
 &lt;p&gt;1.sudo apt update  先更新&lt;/p&gt;
@@ -13,11 +19,12 @@
 &lt;p&gt;sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt   建立local.key和local.crt&lt;/p&gt;
 &lt;p&gt;/etc/stunnel/stunnel.conf設定支援IPV6&lt;/p&gt;
 &lt;p&gt;[https]
-accept = :::443
-cert = /etc/stunnel/localhost.crt
-key = /etc/stunnel/localhost.key
-exec = /usr/bin/fossil
-execargs = /usr/bin/fossil http /home/user/repository/mde2a1.fossil --https --nojail&lt;/p&gt;
+accept = :::443&lt;/p&gt;
+&lt;p&gt;cert = /etc/stunnel/localhost.crt&lt;/p&gt;
+&lt;p&gt;key = /etc/stunnel/localhost.key&lt;/p&gt;
+&lt;p&gt;exec = /usr/bin/fossil&lt;/p&gt;
+&lt;p&gt;execargs = /usr/bin/fossil http /home/user/
+repository/mde2a1.fossil --https --nojail&lt;/p&gt;
 &lt;p&gt;--nojail 目的在 drop the root privilege but do not enter the chroot jail&lt;/p&gt;
 &lt;p&gt;重新啟動 stunnel4 則使用 /etc/init.d/stunnel4 restart&lt;/p&gt;
 &lt;p&gt;設定完成後, 重新開機即可以 https://yourip 連結至自己組別的主機&lt;/p&gt;

@@ -27,7 +27,7 @@
 <v t="amd.20161004083800.5" a="E"><vh>body</vh>
 <v t="amd.20161004083800.6" a="E"><vh>reveal div</vh>
 <v t="amd.20161004083800.7" a="E"><vh>slides div</vh>
-<v t="leo.20170425224553.1" a="E"><vh>封面投影片</vh>
+<v t="leo.20170425224553.1"><vh>封面投影片</vh>
 <v t="amd.20161004083800.8"><vh>blog</vh></v>
 <v t="leo.20170622225012.1"><vh>2</vh></v>
 <v t="leo.20170622230230.1"><vh>3</vh></v>
@@ -72,6 +72,7 @@
 <v t="leo.20170626203912.1"><vh>@edit 20170626.md</vh></v>
 <v t="leo.20170627202601.1"><vh>@edit 20170627.md</vh></v>
 <v t="leo.20170628213017.1"><vh>@edit 20170628.md</vh></v>
+<v t="leo.20180527140903.1"><vh>@edit 20180527.md</vh></v>
 </v>
 </v>
 <v t="leo.20161113205737.1"><vh>@button https server</vh></v>
@@ -122,7 +123,6 @@ print("hello")
 <t tx="amd.20151216151325.1">@language xml
 @tabwidth -4
 @others
-
 </t>
 <t tx="amd.20160106093454.1"></t>
 <t tx="amd.20160106094754.1"></t>
@@ -138,7 +138,6 @@ print("hello")
 <t tx="amd.20161004083800.2">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
     &lt;title&gt;    2017 SPRING 網際內容管理
-    &lt;&lt; 投影片標題 &gt;&gt;
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
     &lt;meta name="author" content="Hakim El Hattab"&gt;
@@ -166,48 +165,17 @@ print("hello")
     &lt;!--[if lt IE 9]&gt;
     &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
     &lt;![endif]--&gt;
-&lt;/head&gt;</t>
+    &lt;&lt; 投影片標題 &gt;&gt;
+&lt;/head&gt;
+</t>
 <t tx="amd.20161004083800.3"></t>
 <t tx="amd.20161004083800.5">&lt;body&gt;
-@others
-&lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/head.min.js"&gt;&lt;/script&gt;
-&lt;script src="https://cad-lab.github.io/cadlab_data/reveal/js/reveal.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-        // More info https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-
-            transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-            // More info https://github.com/hakimel/reveal.js#dependencies
-            dependencies: [
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/zoom-js/zoom.js', async: true },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/notes/notes.js', async: true },
-                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/math/math.js', async: true }
-            ]
-        });
-&lt;/script&gt;
-&lt;/body&gt;
-</t>
-<t tx="amd.20161004083800.6">&lt;div class="reveal"&gt;
-@others
-&lt;/div&gt;
-
-</t>
-<t tx="amd.20161004083800.7">&lt;!-- Any section element inside of this container is displayed as a slide --&gt;
+&lt;div class="reveal"&gt;
+&lt;!-- Any section element inside of this container is displayed as a slide --&gt;
 &lt;div class="slides"&gt;
-@others
-&lt;/div&gt;
-
-</t>
-<t tx="amd.20161004083800.8">&lt;section&gt;
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;section&gt;
  &lt;h2&gt;40523132陳崴的網際網路管理課程&lt;/h2&gt;&lt;br/&gt;
 
 &lt;small&gt;
@@ -227,7 +195,121 @@ Created by [WCM7](https://github.com/s40523132/2017springwcm_g7)
 
 
 
+&lt;section&gt;
+&lt;h2&gt;期末報告:&lt;/h2&gt;&lt;br/&gt;
+這學期學到了很多
+學了如何利用CMSimfly來管理.設計.開發 在虛擬主機的ubuntu上安裝stunnel和fossil 也學會自製網路線.把兩台電腦組成一台更強的電腦 用這台電腦來安裝ubuntu並且使用IPV6協定 也在上面安裝stunnel和fossil 但在安裝fossil時發生點狀況 還沒成功&lt;br/&gt;stunnel:將Client端的網路資料採用SSL(Secure Sockets Layer)加密後，安全的傳輸到指定的Server端再進行解密還原&lt;br/&gt;
+fossil:是在軟體開發中使用的wiki軟體伺服器&lt;br/&gt;
+nginx:可從http轉到https
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;上課筆記:&lt;/h2&gt;&lt;br/&gt;
+機械設計:表達&lt;br/&gt;
+1.口語表達 2.文字表達 3.2D圖像表達 4.3D圖像表達 5.量化.定性方法 6.實際操作&lt;br/&gt;機:很多元件拼湊合成可運作&lt;br/&gt;械:控制在一個範圍 器物有特定功能&lt;br/&gt;
+設:表達出來給別人做&lt;br/&gt;
+計:經過很多思考討論考量&lt;br/&gt;
+網際內容管理在"虛"裡做"實"的內容&lt;br/&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;上課筆記2:&lt;/h2&gt;&lt;br/&gt;
+DNS:網域名稱系統(Domain Name System)&lt;br/&gt;
+web 全球用網路交換資訊 像蜘蛛網&lt;br/&gt;
+World Wide Web(3W):全球資訊網路服務系統&lt;br/&gt;nginx:是一款面向效能設計的HTTP伺服器，相較於Apache具有占有記憶體少，穩定性高等優勢&lt;br/&gt;
+甲骨文股份有限公司Oracle Corporation 寫JAVA.Virtualbox&lt;br/&gt;
+
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;上課筆記3:&lt;/h2&gt;&lt;br/&gt;
+我們要利用 虛實整合設計工程師  虛:數位化 實:實作   網際內容管理在"虛"裡做"實"的內容&lt;br/&gt;
+主開機紀錄 mbr(Master Boot Record):又叫做主啟動磁區，是電腦開機後存取硬碟時所必須要讀取的首個磁區&lt;br/&gt;
+固態硬碟 SSD:是一種以記憶體作為永久性記憶體的電腦儲存裝置.固態硬碟具有低功耗、無噪音、抗震動、低熱量的特點&lt;br/&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;上課筆記4:&lt;/h2&gt;&lt;br/&gt;
+小型電腦系統介面SCSI(Small Computer System Interface):是一種用於電腦及其週邊裝置之間系統級介面的獨立處理器標準&lt;br/&gt;容錯式磁碟陣列(RAID, Redundant Array of Independent Disks):把多個相對便宜的硬碟組合起來，成為一個硬碟陣列組，使效能達到甚至超過一個價格昂貴、容量巨大的硬碟&lt;br/&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;上課筆記5:&lt;/h2&gt;&lt;br/&gt;
+pip是一個以Python電腦程式語言寫成的軟體包管理系統&lt;br/&gt;SolidWorks是達梭系統(Dassault Systemes S.A.)旗下的SolidWorks公司開發的
+達梭系統(法語：Dassault Systemes S.A.，Euronext：DSY)是法國程式公司
+自學.執行.想像&lt;br/&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;上課筆記6:&lt;/h2&gt;&lt;br/&gt;
+如何把IPV4切換到IPV6&lt;br/&gt;
+140.130.17.17 系上IP&lt;br/&gt;
+2001:288:6004:1::2 學校的&lt;br/&gt;
+2001:b000:168::1 中華電信&lt;br/&gt;
+
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;自製網路線:&lt;/h2&gt;&lt;br/&gt;
+先準備1條568B線.壓線鉗.接頭
+先用壓線鉗把外套拆掉.再把裡面4對線分別分開
+把8條線按照(白橘.橘.白綠.藍.白藍.綠.白棕.棕)
+用整齊再對齊.套入接頭用力壓到底
+再用壓線鉗壓緊.大功告成&lt;br/&gt;
+&lt;a href="http://imgur.com/rkQt3nG"&gt;&lt;img src="http://i.imgur.com/rkQt3nG.jpg"width="350" height="350" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;/section&gt;
+
+
+&lt;section&gt;
+&lt;h2&gt;拆.組電腦:&lt;/h2&gt;&lt;br/&gt;
+大家拆組電腦的過程:把還原卡拔除.拔起電池3秒再裝回.把硬碟裝一起.把2個4G的RAM合併成8G的RAM.開機測試B一聲OK B好幾聲不OK&lt;br/&gt;
+這是我第一次拆電腦,也發現了很多我不知道的電腦零件&lt;br/&gt;原來一台主機裡有那麼多的零件,不是只有顯卡.記憶體.處理器&lt;br/&gt;
+&lt;br/&gt;&lt;a href="http://imgur.com/TMEetO2"&gt;&lt;img src="http://i.imgur.com/TMEetO2.jpg" width="200" height="200"title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;a href="http://imgur.com/NrOnktu"&gt;&lt;img src="http://i.imgur.com/NrOnktu.jpg"width="200" height="200" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;a href="http://imgur.com/YFjQKKb"&gt;&lt;img src="http://i.imgur.com/YFjQKKb.jpg"width="200" height="200" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;a href="http://imgur.com/AIKpa1C"&gt;&lt;img src="http://i.imgur.com/AIKpa1C.jpg"width="200" height="200" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;IPV4連IPV6:&lt;/h2&gt;&lt;br/&gt;
+啟動Xming sever  打開putty&lt;br/&gt;
+設定Host Name:wcmg7.kmol.info&lt;br/&gt;
+proxy設定:1.點選HTTP 2.proxy&lt;br/&gt; hostname:proxy.kmol.info(Port:3128)&lt;br/&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;安裝ubuntu的設定:&lt;/h2&gt;&lt;br/&gt;
+在BIOS模式下設定開機順序由光碟先
+安裝完後設定1.開機順序由硬碟優先2.側蓋打開能繼續操作3.斷電.恢復電時自動開機
+&lt;/section&gt;
+    &lt;/script&gt;
+&lt;/section&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/head.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cad-lab.github.io/cadlab_data/reveal/js/reveal.js"&gt;&lt;/script&gt;
+@others
+&lt;script&gt;
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'https://cad-lab.github.io/cadlab_data/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/zoom-js/zoom.js', async: true },
+                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/notes/notes.js', async: true },
+                { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/math/math.js', async: true }
+            ]
+        });
+&lt;/script&gt;
+&lt;/body&gt;
 </t>
+<t tx="amd.20161004083800.6">@others
+</t>
+<t tx="amd.20161004083800.7">@others
+</t>
+<t tx="amd.20161004083800.8"></t>
 <t tx="leo.20151212173315.1"></t>
 <t tx="leo.20151212173315.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -496,91 +578,18 @@ def domake():
 # 利用執行緒執行 https 伺服器
 make = threading.Thread(target=domake)
 make.start()</t>
-<t tx="leo.20170425224553.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
+<t tx="leo.20170425224553.1">@others
 </t>
-<t tx="leo.20170622225012.1">&lt;section&gt;
-&lt;h2&gt;期末報告:&lt;/h2&gt;&lt;br/&gt;
-這學期學到了很多
-學了如何利用CMSimfly來管理.設計.開發 在虛擬主機的ubuntu上安裝stunnel和fossil 也學會自製網路線.把兩台電腦組成一台更強的電腦 用這台電腦來安裝ubuntu並且使用IPV6協定 也在上面安裝stunnel和fossil 但在安裝fossil時發生點狀況 還沒成功&lt;br/&gt;stunnel:將Client端的網路資料採用SSL(Secure Sockets Layer)加密後，安全的傳輸到指定的Server端再進行解密還原&lt;br/&gt;
-fossil:是在軟體開發中使用的wiki軟體伺服器&lt;br/&gt;
-nginx:可從http轉到https
-&lt;/section&gt;</t>
-<t tx="leo.20170622230230.1">&lt;section&gt;
-&lt;h2&gt;上課筆記:&lt;/h2&gt;&lt;br/&gt;
-機械設計:表達&lt;br/&gt;
-1.口語表達 2.文字表達 3.2D圖像表達 4.3D圖像表達 5.量化.定性方法 6.實際操作&lt;br/&gt;機:很多元件拼湊合成可運作&lt;br/&gt;械:控制在一個範圍 器物有特定功能&lt;br/&gt;
-設:表達出來給別人做&lt;br/&gt;
-計:經過很多思考討論考量&lt;br/&gt;
-網際內容管理在"虛"裡做"實"的內容&lt;br/&gt;
-&lt;/section&gt;</t>
-<t tx="leo.20170622232224.1">&lt;section&gt;
-&lt;h2&gt;上課筆記2:&lt;/h2&gt;&lt;br/&gt;
-DNS:網域名稱系統(Domain Name System)&lt;br/&gt;
-web 全球用網路交換資訊 像蜘蛛網&lt;br/&gt;
-World Wide Web(3W):全球資訊網路服務系統&lt;br/&gt;nginx:是一款面向效能設計的HTTP伺服器，相較於Apache具有占有記憶體少，穩定性高等優勢&lt;br/&gt;
-甲骨文股份有限公司Oracle Corporation 寫JAVA.Virtualbox&lt;br/&gt;
-
-&lt;/section&gt;</t>
-<t tx="leo.20170622232726.1">&lt;section&gt;
-&lt;h2&gt;上課筆記3:&lt;/h2&gt;&lt;br/&gt;
-我們要利用 虛實整合設計工程師  虛:數位化 實:實作   網際內容管理在"虛"裡做"實"的內容&lt;br/&gt;
-主開機紀錄 mbr(Master Boot Record):又叫做主啟動磁區，是電腦開機後存取硬碟時所必須要讀取的首個磁區&lt;br/&gt;
-固態硬碟 SSD:是一種以記憶體作為永久性記憶體的電腦儲存裝置.固態硬碟具有低功耗、無噪音、抗震動、低熱量的特點&lt;br/&gt;
-&lt;/section&gt;</t>
-<t tx="leo.20170622233505.1">&lt;section&gt;
-&lt;h2&gt;上課筆記4:&lt;/h2&gt;&lt;br/&gt;
-小型電腦系統介面SCSI(Small Computer System Interface):是一種用於電腦及其週邊裝置之間系統級介面的獨立處理器標準&lt;br/&gt;容錯式磁碟陣列(RAID, Redundant Array of Independent Disks):把多個相對便宜的硬碟組合起來，成為一個硬碟陣列組，使效能達到甚至超過一個價格昂貴、容量巨大的硬碟&lt;br/&gt;
-&lt;/section&gt;</t>
-<t tx="leo.20170622233745.1">&lt;section&gt;
-&lt;h2&gt;上課筆記5:&lt;/h2&gt;&lt;br/&gt;
-pip是一個以Python電腦程式語言寫成的軟體包管理系統&lt;br/&gt;SolidWorks是達梭系統(Dassault Systemes S.A.)旗下的SolidWorks公司開發的
-達梭系統(法語：Dassault Systemes S.A.，Euronext：DSY)是法國程式公司
-自學.執行.想像&lt;br/&gt;
-&lt;/section&gt;</t>
-<t tx="leo.20170622233852.1">&lt;section&gt;
-&lt;h2&gt;上課筆記6:&lt;/h2&gt;&lt;br/&gt;
-如何把IPV4切換到IPV6&lt;br/&gt;
-140.130.17.17 系上IP&lt;br/&gt;
-2001:288:6004:1::2 學校的&lt;br/&gt;
-2001:b000:168::1 中華電信&lt;br/&gt;
-
-&lt;/section&gt;</t>
-<t tx="leo.20170623000104.1">&lt;section&gt;
-&lt;h2&gt;自製網路線:&lt;/h2&gt;&lt;br/&gt;
-先準備1條568B線.壓線鉗.接頭
-先用壓線鉗把外套拆掉.再把裡面4對線分別分開
-把8條線按照(白橘.橘.白綠.藍.白藍.綠.白棕.棕)
-用整齊再對齊.套入接頭用力壓到底
-再用壓線鉗壓緊.大功告成&lt;br/&gt;
-&lt;a href="http://imgur.com/rkQt3nG"&gt;&lt;img src="http://i.imgur.com/rkQt3nG.jpg"width="350" height="350" title="source: imgur.com" /&gt;&lt;/a&gt;
-&lt;/section&gt;
-
-
-</t>
-<t tx="leo.20170623000827.1">&lt;section&gt;
-&lt;h2&gt;拆.組電腦:&lt;/h2&gt;&lt;br/&gt;
-大家拆組電腦的過程:把還原卡拔除.拔起電池3秒再裝回.把硬碟裝一起.把2個4G的RAM合併成8G的RAM.開機測試B一聲OK B好幾聲不OK&lt;br/&gt;
-這是我第一次拆電腦,也發現了很多我不知道的電腦零件&lt;br/&gt;原來一台主機裡有那麼多的零件,不是只有顯卡.記憶體.處理器&lt;br/&gt;
-&lt;br/&gt;&lt;a href="http://imgur.com/TMEetO2"&gt;&lt;img src="http://i.imgur.com/TMEetO2.jpg" width="200" height="200"title="source: imgur.com" /&gt;&lt;/a&gt;
-&lt;a href="http://imgur.com/NrOnktu"&gt;&lt;img src="http://i.imgur.com/NrOnktu.jpg"width="200" height="200" title="source: imgur.com" /&gt;&lt;/a&gt;
-&lt;a href="http://imgur.com/YFjQKKb"&gt;&lt;img src="http://i.imgur.com/YFjQKKb.jpg"width="200" height="200" title="source: imgur.com" /&gt;&lt;/a&gt;
-&lt;a href="http://imgur.com/AIKpa1C"&gt;&lt;img src="http://i.imgur.com/AIKpa1C.jpg"width="200" height="200" title="source: imgur.com" /&gt;&lt;/a&gt;
-&lt;/section&gt;</t>
-<t tx="leo.20170623010156.1">&lt;section&gt;
-&lt;h2&gt;IPV4連IPV6:&lt;/h2&gt;&lt;br/&gt;
-啟動Xming sever  打開putty&lt;br/&gt;
-設定Host Name:wcmg7.kmol.info&lt;br/&gt;
-proxy設定:1.點選HTTP 2.proxy&lt;br/&gt; hostname:proxy.kmol.info(Port:3128)&lt;br/&gt;
-&lt;/section&gt;</t>
-<t tx="leo.20170623011010.1">&lt;section&gt;
-&lt;h2&gt;安裝ubuntu的設定:&lt;/h2&gt;&lt;br/&gt;
-在BIOS模式下設定開機順序由光碟先
-安裝完後設定1.開機順序由硬碟優先2.側蓋打開能繼續操作3.斷電.恢復電時自動開機
-&lt;/section&gt;</t>
+<t tx="leo.20170622225012.1"></t>
+<t tx="leo.20170622230230.1"></t>
+<t tx="leo.20170622232224.1"></t>
+<t tx="leo.20170622232726.1"></t>
+<t tx="leo.20170622233505.1"></t>
+<t tx="leo.20170622233745.1"></t>
+<t tx="leo.20170622233852.1"></t>
+<t tx="leo.20170623000104.1"></t>
+<t tx="leo.20170623000827.1"></t>
+<t tx="leo.20170623010156.1"></t>
+<t tx="leo.20170623011010.1"></t>
 </tnodes>
 </leo_file>
